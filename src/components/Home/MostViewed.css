@@ -1,0 +1,62 @@
+.most_viewed {
+  background-color: black;
+  padding: 4% 0;
+}
+.most_viewed h1 {
+  font-weight: 800;
+  font-size: 32px;
+  padding-bottom: 3%;
+}
+.most_viewed_card {
+  width: 95% !important;
+  color: white;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: inset 0px 39px 56px -36px rgba(255, 255, 255, 0.5),
+    inset 0px 7px 11px -4px #ffffff,
+    inset 0px -82px 68px -64px rgba(96, 68, 144, 0.3),
+    inset 0px 98px 100px -48px rgba(202, 172, 255, 0.3),
+    inset 0px 4px 18px rgba(154, 146, 210, 0.3),
+    inset 0px 1px 40px rgba(227, 222, 255, 0.2);
+  backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px !important;
+}
+.most_viewed_card_body {
+  margin: 5% 5%;
+  padding: 0 5%;
+}
+.most_viewed_card_img {
+  height: 300px;
+  border-radius: 20px !important;
+}
+.mostviewed_type {
+  font-size: 13px;
+}
+.mostviewed_viewonmap {
+  color: #00c08a;
+  font-weight: 600;
+}
+.mostviewed_card_smallImg {
+  width: 55px;
+  height: 55px;
+ 
+}
+
+.mostviewed_sqft{
+    font-size: 13.5px;
+}
+.mostviewed_prop_imgtext_left{
+    width: 350px ;
+}
+
+.slick-dots li.slick-active button:before {
+  color:#00C08A !important;
+  font-size: 10px;
+  margin-top: 50%;
+}
+.slick-dots li button:before {
+  color:#00C08A !important;
+  font-size: 10px;
+  margin-top: 50%;
+}

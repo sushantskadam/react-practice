@@ -1,0 +1,143 @@
+.stepper {
+  width: 30%;
+  margin-left: -4%;
+}
+.stepper_body{
+  padding: 5% 0;
+  background-color: black;
+
+}
+.addProp {
+  background-color: black;
+  color: white;
+  
+}
+.addProp_title {
+  padding-top: 4%;
+  padding-bottom: 1%;
+  font-weight: 500;
+  font-size: 40px;
+
+  color: white;
+}
+.addPropDesc {
+  font-weight: 600;
+  font-size: 22px;
+  /* margin-top: 1%; */
+  margin-bottom: 3%;
+  
+}
+
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid #242424;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid #242424;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #242424;
+  margin-bottom: 6px;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+  background-color: rgb(0, 192, 138);
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid rgb(0, 192, 138);
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .step-indicator__step {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 25%;
+}
+
+
+.step-done:before, .step-todo:before {
+  content: "";
+  display: block;
+  height: 5px;
+  left: 56%;
+  position: absolute;
+  top: 28%;
+  width: 100%;
+}
+
+
+.step-done:before {
+  background: #05bd8e;
+} */
+
